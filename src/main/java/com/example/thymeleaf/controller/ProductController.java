@@ -41,8 +41,8 @@ public class ProductController {
 
         // если minPrice меньше 0
         if (minPrice.compareTo(BigDecimal.ZERO) < 0) minPrice = BigDecimal.ZERO;
-        // если maxPrice больше 1000000
-        if (maxPrice.compareTo(BigDecimal.valueOf(1000000)) > 0 ) maxPrice = BigDecimal.valueOf(1000000);
+        // если maxPrice больше 10000
+        if (maxPrice.compareTo(BigDecimal.valueOf(10000)) > 0 ) maxPrice = BigDecimal.valueOf(10000);
         // если не указан номер страницы, то показываем 1-ю страницу с дефолтными значениями
         if (pageIndex == null) pageIndex = 1;
         // если номер страницы = 0, то выводим весь список товаров (только в учебных целях)
